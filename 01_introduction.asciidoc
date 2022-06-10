@@ -20,8 +20,8 @@ While the bulk of this book is written for programmers, the first few chapters a
 ((("Lightning Network (generally)","basic concepts", id="ix_01_introduction-asciidoc1", range="startofrange")))As we explore how the Lightning Network actually works, we will encounter some technical terminology that might, at first, be a bit confusing. While all of these concepts and terms will be explained in detail as we progress through the book and are defined in the glossary, some basic definitions now will make it easier to understand the concepts in the next two chapters. If you don't understand all of the words in these definitions yet, that's OK. You'll understand more as you move through the text.
 
 Blockchain:: ((("blockchain","defined")))A distributed transaction ledger, produced by a network of computers. Bitcoin, for example, is a system that produces a blockchain. The Lightning Network is not itself a blockchain, nor does it produce a blockchain. It is a network that relies on an existing external blockchain for its security. 
-### Doubt - Since it is said that LN is not a blockchian nor it does produce a blockchain what do we mean by LN node. ###
-### Soln - Nodes are not miners. :p ###
+## Doubt - Since it is said that LN is not a blockchian nor it does produce a blockchain what do we mean by LN node. ##
+## Soln - Nodes are not miners. :p ##
 
 Digital signature:: ((("digital signatures")))A digital signature is a mathematical scheme for verifying the authenticity of digital messages or documents. A valid digital signature gives a recipient reason to believe that the message was created by a known sender, that the sender cannot deny having sent the message, and that the message was not altered in transit.
 
@@ -202,7 +202,7 @@ While the Lightning Network was initially conceived for Bitcoin, it can be imple
  * Whereas on-chain Bitcoin transactions are broadcast and verified by all nodes in the network, payments routed on the Lightning Network are transmitted between pairs of nodes and are not visible to everyone, resulting in much greater privacy.
  * Unlike transactions on the Bitcoin network, payments routed on the Lightning Network do not need to be stored permanently. Lightning thus uses fewer resources and hence is cheaper. This property also has benefits for privacy.
  * The Lightning Network uses onion routing, similar to the protocol used by The Onion Router (Tor) privacy network, so that even the nodes involved in routing a payment are only directly aware of their predecessor and successor in the payment route.
- [read more about onion routing here](https://www.google.com/search?q=onion+routing&rlz=1C1JZAP_enIN936IN936&sxsrf=ALiCzsadA-mckOgT9YygK9Gb1htskx6BRA%3A1654824631208&ei=t56iYv-yDIicseMPvceN2AE&ved=0ahUKEwi_6ruS3qH4AhUITmwGHb1jAxsQ4dUDCA4&uact=5&oq=onion+routing&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6BQgAEJECOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6DgguEIAEELEDEMcBENEDOggIABCxAxCDAToOCC4QgAQQsQMQxwEQowI6BwgAELEDEEM6CAgAEIAEELEDOg4ILhCxAxDHARCjAhCRAjoLCC4QgAQQsQMQ1AI6CwguEIAEEMcBEK8BOggILhCABBCxAzoLCAAQgAQQsQMQyQM6BAgAEA06BggAEB4QDToICAAQHhAPEA06CAgAEB4QFhAKOggIABAeEA0QBUoECEEYAEoECEYYAFDNB1iRLGCDLWgEcAF4AIABxwGIAfcPkgEEMC4xNZgBAKABAcgBCsABAQ&sclient=gws-wiz-serp)
+ [read more about onion routing here](https://en.wikipedia.org/wiki/Onion_routing)
  * When used on top of Bitcoin, the Lightning Network uses real bitcoin, which is always in the possession (custody) and full control of the user. Lightning is not a separate token or coin, it _is_ Bitcoin.
 
 
@@ -221,6 +221,7 @@ Bob owns a coffee shop, "Bob's Cafe." On-chain Bitcoin payments don't scale for 
 
 Software service business::
 Chan is a Chinese entrepreneur who sells information services related to the Lightning Network, as well as Bitcoin and other cryptocurrencies. Chan is selling these information services over the internet by implementing micropayments over the Lightning Network. Additionally, Chan has implemented a liquidity provider service that rents inbound channel capacity on the Lightning Network, charging a small bitcoin fee for each rental period.
+## COMMENT- Liquidity providing on Channels in exchange of fee! sounds interesting. ##
 
 Gamer::
 Dina is a teenage gamer from Russia. She plays many different computer games, but her favorite ones are those that have an "in-game economy" based on real money. As she plays games, she also earns money by acquiring and selling virtual in-game items. The Lightning Network allows her to transact in small amounts for in-game items as well as earn small amounts for completing quests.
